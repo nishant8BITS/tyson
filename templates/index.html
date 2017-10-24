@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="container-fluid home-page">
+
+        <div class="container-fluid main-image">
+            <h1 class="main-image-text">Open your laptop and join our community</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="questions-container">
+
+                <div class="row">
+                    <div class="col-sm-6 image-question">
+                        <h2>Do you feel sad and lonely sometimes?</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive img-circle" src="{% static 'images/sad-dog.jpg' %}">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img class="img-responsive img-circle" src="{% static 'images/thinking-dog.jpg' %}">
+                    </div>
+                    <div class="col-sm-6 image-question">
+                        <h2>Have you got questions but nobody to answer them?</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 image-question">
+                        <h2>Are you really bored and can't think of any activities?</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-responsive img-circle" src="{% static 'images/bored-dog.jpg' %}">
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <h1>You are at the right place!</h1>
+                <h3>Read our blog, join our forum, meet other dogs</h3>
+                <h3>If you love shopping, have a look at our products, too!</h3>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

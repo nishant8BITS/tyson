@@ -1,0 +1,30 @@
+{% extends "products.html" %}
+{% block productscontent %}
+
+    <div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Purchase</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{% if product.image %}
+                        <img width="200" src="/media/{{ product.image}}">
+                    {% endif %}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.description }}</td>
+                <td>${{ product.price }}</td>
+                <td>{{ product.paypal_form.sandbox }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+{% endblock %}

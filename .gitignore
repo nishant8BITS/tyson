@@ -1,0 +1,6 @@
+db.sqlite3
+media
+heroku
+blog/fixtures/
+forum/fixtures/
+products/fixtures/

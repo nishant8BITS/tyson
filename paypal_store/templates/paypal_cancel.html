@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container">
+
+    <h1>You've cancelled the purchase of this item!</h1>
+
+    <button class="btn btn-default"><a href="{% url 'products_list' %}">Back to products</a></button>
+
+    </div>
+
+{% endblock %}

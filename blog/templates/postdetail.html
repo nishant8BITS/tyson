@@ -1,0 +1,12 @@
+{% extends "blog.html" %}
+{% block blogcontent %}
+    <div>
+        <h2><a href="">{{ post.title }}</a></h2>
+        {% if post.image %}
+            <img class="post-image" src="/media/{{ post.image}}" width="350">
+        {% endif %}
+        <p>{{ post.content }}</p>
+        <p><a href="{% url 'blogposts' %}"><button class="btn btn-default">Go Back to Blog</button></a></p>
+        <p>{{ post.published_date }} | Views {{ post.views }}</p>
+    </div>
+{% endblock %}

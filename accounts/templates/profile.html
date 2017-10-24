@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container short-page">
+        <h2>Welcome to Lulu's Dog Forum!</h2>
+        <p>You are logged in as {{ user.username }} </p>
+        <p>Your last login was {{ user.last_login }}</p>
+    </div>
+{% endblock %}

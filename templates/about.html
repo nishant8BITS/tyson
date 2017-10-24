@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+    <div class="container">
+        <h1 class="page-title">About</h1>
+        <div class="container">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-container"><p>If you are wondering what are the latest hot news around the globe, or what make-up you should wear on a Saturday night, you came to the wrong place. But if u want to know the latest dog
+                rumours around the area, or get the answer to questions like stick or ball, bacon or chicken, chew or not to chew the new shoes your owner, then you arrived to the perfect site!
+                As a 9 year old Welsh terrier I have to face these questions every day, and here you can follow me trying to solve these mysteries. Happy to help if you have any questions, hope you are going to enjoy the ride!</p></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><img class="img-responsive" src="{% static 'images/about.jpg' %}"></div>
+        </div>
+    </div>
+{% endblock %}

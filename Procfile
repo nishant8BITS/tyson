@@ -1,0 +1,1 @@
+web: gunicorn lulus_dog_forum.wsgi:application
